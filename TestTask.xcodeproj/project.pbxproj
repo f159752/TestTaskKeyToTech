@@ -12,6 +12,11 @@
 		4177B44C22C4EC81005E9962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4177B44A22C4EC81005E9962 /* Main.storyboard */; };
 		4177B44E22C4EC81005E9962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4177B44D22C4EC81005E9962 /* Assets.xcassets */; };
 		4177B45122C4EC81005E9962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4177B44F22C4EC81005E9962 /* LaunchScreen.storyboard */; };
+		4177B45922C511C5005E9962 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177B45822C511C5005E9962 /* CommentsViewController.swift */; };
+		4177B45B22C52963005E9962 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177B45A22C52963005E9962 /* Network.swift */; };
+		4177B45E22C52A3F005E9962 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177B45D22C52A3F005E9962 /* Comment.swift */; };
+		4177B46222C5373D005E9962 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177B46022C5373D005E9962 /* CommentCell.swift */; };
+		4177B46322C5373D005E9962 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4177B46122C5373D005E9962 /* CommentCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		4177B44D22C4EC81005E9962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4177B45022C4EC81005E9962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4177B45222C4EC81005E9962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4177B45822C511C5005E9962 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		4177B45A22C52963005E9962 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		4177B45D22C52A3F005E9962 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		4177B46022C5373D005E9962 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		4177B46122C5373D005E9962 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,33 @@
 			children = (
 				4177B44622C4EC81005E9962 /* AppDelegate.swift */,
 				4177B44822C4EC81005E9962 /* ViewController.swift */,
+				4177B45F22C5371E005E9962 /* Table */,
+				4177B45A22C52963005E9962 /* Network.swift */,
+				4177B45C22C529F6005E9962 /* Model */,
 				4177B44A22C4EC81005E9962 /* Main.storyboard */,
 				4177B44D22C4EC81005E9962 /* Assets.xcassets */,
 				4177B44F22C4EC81005E9962 /* LaunchScreen.storyboard */,
 				4177B45222C4EC81005E9962 /* Info.plist */,
 			);
 			path = TestTask;
+			sourceTree = "<group>";
+		};
+		4177B45C22C529F6005E9962 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4177B45D22C52A3F005E9962 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4177B45F22C5371E005E9962 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				4177B45822C511C5005E9962 /* CommentsViewController.swift */,
+				4177B46022C5373D005E9962 /* CommentCell.swift */,
+				4177B46122C5373D005E9962 /* CommentCell.xib */,
+			);
+			path = Table;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +157,7 @@
 				4177B45122C4EC81005E9962 /* LaunchScreen.storyboard in Resources */,
 				4177B44E22C4EC81005E9962 /* Assets.xcassets in Resources */,
 				4177B44C22C4EC81005E9962 /* Main.storyboard in Resources */,
+				4177B46322C5373D005E9962 /* CommentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4177B45E22C52A3F005E9962 /* Comment.swift in Sources */,
 				4177B44922C4EC81005E9962 /* ViewController.swift in Sources */,
 				4177B44722C4EC81005E9962 /* AppDelegate.swift in Sources */,
+				4177B45B22C52963005E9962 /* Network.swift in Sources */,
+				4177B45922C511C5005E9962 /* CommentsViewController.swift in Sources */,
+				4177B46222C5373D005E9962 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
